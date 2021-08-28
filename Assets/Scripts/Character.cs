@@ -9,6 +9,13 @@ using UnityEngine;
 
 /// 체력을 닳게해도 되고, 밖으로 날려도 이기는?
 
+/// 애니메이션 작업
+// 스테이지 시작시 아군, 적 생성
+// 적 처치후 스테이지 이동
+// 동료 추가, 밀리는걸 팀 단위로
+// 스테이지 전환시 연출
+// 스테이지 진입 로비씬
+
 public enum TeamType
 {
     Ally, Enemy,
@@ -16,6 +23,21 @@ public enum TeamType
 
 public class Character : MonoBehaviour
 {
+    [SerializeField]
+    private TeamType teamType;
+    public TeamType TeamType
+    {
+        get { return teamType; }
+        set
+        {
+            teamType = value;
+
+            bool isRight = ( teamType == TeamType.Ally );
+            animator.SetBool( AnimParams.IsRight, isRight );
+            moveDirection = ( isRight ? Vector2.right.x : Vector2.left.x );
+        }
+    }
+
     [SerializeField]
     private float health;
     public float Health
@@ -34,13 +56,15 @@ public class Character : MonoBehaviour
     public float strength;
     public float moveSpeed;
 
-    protected float moveDirection;
-
     protected Animator animator;
     protected Rigidbody2D rigid;
 
-    public TeamType teamType;
+    protected static class AnimParams
+    {
+        public static int IsRight = Animator.StringToHash( "IsRight" );
+    }
 
+    private float moveDirection;
     private float hitDelay = 0.0f;
 
     protected void Awake()
@@ -51,7 +75,7 @@ public class Character : MonoBehaviour
 
     protected void Start()
     {
-        moveDirection = ( teamType == TeamType.Ally ? Vector2.right.x : Vector2.left.x );
+        TeamType = teamType;
     }
 
     protected void Update()
