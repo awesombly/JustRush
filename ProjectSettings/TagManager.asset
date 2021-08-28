@@ -47,6 +47,9 @@ TagManager:
   - name: Flatform
     uniqueID: 3366087719
     locked: 0
+  - name: Object
+    uniqueID: 3301320323
+    locked: 0
   - name: Foreground
     uniqueID: 1767156035
     locked: 0
