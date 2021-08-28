@@ -10,16 +10,16 @@ TextureImporter:
     second: Nature_environment_01_1
   - first:
       213: 4065226785917746118
-    second: Nature_environment_01_2
+    second: Nature_Hill_TL
   - first:
       213: 1260341826971643692
-    second: Nature_environment_01_3
+    second: Nature_Hill_TCS
   - first:
       213: 5131819199825977957
-    second: Nature_environment_01_4
+    second: Nature_Hill_TCE
   - first:
       213: -8328696117218991216
-    second: Nature_environment_01_5
+    second: Nature_Hill_TR
   - first:
       213: -4172630196892951415
     second: Nature_environment_01_6
@@ -46,10 +46,10 @@ TextureImporter:
     second: Nature_environment_01_13
   - first:
       213: 678728350096836083
-    second: Nature_environment_01_14
+    second: Nature_Hill_LC
   - first:
       213: -3566488900254721166
-    second: Nature_environment_01_15
+    second: Nature_Hill_RC
   - first:
       213: -8887741097998514835
     second: Nature_environment_01_16
@@ -124,31 +124,31 @@ TextureImporter:
     second: Nature_environment_01_39
   - first:
       213: 4051331471907923062
-    second: Nature_environment_01_40
+    second: Nature_Dark
   - first:
       213: -2669031846853508406
-    second: Nature_environment_01_41
+    second: Nature_Basic_TC1
   - first:
       213: 825444801531627669
-    second: Nature_environment_01_42
+    second: Nature_Basic_TC2
   - first:
       213: -2841740754249302963
-    second: Nature_environment_01_43
+    second: Nature_Basic_TC3
   - first:
       213: 9030718464863221
-    second: Nature_environment_01_44
+    second: Nature_Basic_TC4
   - first:
       213: -3270292393796218926
-    second: Nature_environment_01_45
+    second: Nature_Basic_TC5
   - first:
       213: 3140342360891266312
-    second: Nature_environment_01_46
+    second: Nature_Basic_TC6
   - first:
       213: -2222020972150533842
-    second: Nature_environment_01_47
+    second: Nature_Basic_TC7
   - first:
       213: -3364171518746081168
-    second: Nature_environment_01_48
+    second: Nature_Basic_TC8
   - first:
       213: 4904706779486886887
     second: Nature_environment_01_49
@@ -184,13 +184,13 @@ TextureImporter:
     second: Nature_environment_01_59
   - first:
       213: -5245686889577396482
-    second: Nature_environment_01_60
+    second: Nature_PaddingTL
   - first:
       213: -6552573637921260545
-    second: Nature_environment_01_61
+    second: Nature_PaddingTC
   - first:
       213: -753475792000228454
-    second: Nature_environment_01_62
+    second: Nature_PaddingTR
   - first:
       213: -9038635039128328864
     second: Nature_environment_01_63
@@ -205,7 +205,7 @@ TextureImporter:
     second: Nature_environment_01_66
   - first:
       213: 5410431102308164392
-    second: Nature_environment_01_67
+    second: Nature_Basic_TL
   - first:
       213: -3669110425121043735
     second: Nature_environment_01_68
@@ -214,10 +214,10 @@ TextureImporter:
     second: Nature_environment_01_69
   - first:
       213: 2142059191972650030
-    second: Nature_environment_01_70
+    second: Nature_Basic_STL
   - first:
       213: 2674496714565514713
-    second: Nature_environment_01_71
+    second: Nature_Basic_STR
   - first:
       213: -3053680095554392621
     second: Nature_environment_01_72
@@ -226,7 +226,7 @@ TextureImporter:
     second: Nature_environment_01_73
   - first:
       213: -1100623824967703953
-    second: Nature_environment_01_74
+    second: Nature_Basic_TR
   - first:
       213: -8992504736889016482
     second: Nature_environment_01_75
@@ -250,13 +250,13 @@ TextureImporter:
     second: Nature_environment_01_81
   - first:
       213: -8981368111638395968
-    second: Nature_environment_01_82
+    second: Nature_PaddingLC
   - first:
       213: 5798927495251929218
-    second: Nature_environment_01_83
+    second: Nature_PaddingC
   - first:
       213: -1465996038863706501
-    second: Nature_environment_01_84
+    second: Nature_PaddingRC
   - first:
       213: -3695384739086678229
     second: Nature_environment_01_85
@@ -271,13 +271,13 @@ TextureImporter:
     second: Nature_environment_01_88
   - first:
       213: -1034388488716550023
-    second: Nature_environment_01_89
+    second: Nature_Basic_BLN
   - first:
       213: 9035112252166638868
     second: Nature_environment_01_90
   - first:
       213: -5735859375768621409
-    second: Nature_environment_01_91
+    second: Nature_Basic_LC
   - first:
       213: -3084753053601658848
     second: Nature_environment_01_92
@@ -286,13 +286,13 @@ TextureImporter:
     second: Nature_environment_01_93
   - first:
       213: 1186516383714890317
-    second: Nature_environment_01_94
+    second: Nature_Basic_BRN
   - first:
       213: 3450955287741765006
     second: Nature_environment_01_95
   - first:
       213: 5221736655781774063
-    second: Nature_environment_01_96
+    second: Nature_Basic_BRN
   - first:
       213: 6771815368172672864
     second: Nature_environment_01_97
@@ -316,31 +316,31 @@ TextureImporter:
     second: Nature_environment_01_103
   - first:
       213: 6508066951421648370
-    second: Nature_environment_01_104
+    second: Nature_PaddingBL
   - first:
       213: 1917493603756610002
-    second: Nature_environment_01_105
+    second: Nature_PaddingBC
   - first:
       213: -8671256468646491220
-    second: Nature_environment_01_106
+    second: Nature_PaddingBR
   - first:
       213: -2321139162730564405
     second: Nature_environment_01_107
   - first:
       213: -1792305347461625022
-    second: Nature_environment_01_108
+    second: Nature_Basic_BC1
   - first:
       213: -6780728466008584257
-    second: Nature_environment_01_109
+    second: Nature_Basic_BC2
   - first:
       213: 6209697491114962404
     second: Nature_environment_01_110
   - first:
       213: -5341248846353413394
-    second: Nature_environment_01_111
+    second: Nature_Basic_BR
   - first:
       213: -4999530171974456948
-    second: Nature_environment_01_112
+    second: Nature_Basic_BL
   - first:
       213: -6398436011446102448
     second: Nature_environment_01_113
@@ -553,7 +553,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_2
+      name: Nature_Hill_TL
       rect:
         serializedVersion: 2
         x: 208
@@ -574,7 +574,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_3
+      name: Nature_Hill_TCS
       rect:
         serializedVersion: 2
         x: 256
@@ -595,7 +595,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_4
+      name: Nature_Hill_TCE
       rect:
         serializedVersion: 2
         x: 304
@@ -616,7 +616,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_5
+      name: Nature_Hill_TR
       rect:
         serializedVersion: 2
         x: 352
@@ -805,7 +805,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_14
+      name: Nature_Hill_LC
       rect:
         serializedVersion: 2
         x: 208
@@ -826,7 +826,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_15
+      name: Nature_Hill_RC
       rect:
         serializedVersion: 2
         x: 352
@@ -1351,7 +1351,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_40
+      name: Nature_Dark
       rect:
         serializedVersion: 2
         x: 880
@@ -1372,7 +1372,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_41
+      name: Nature_Basic_TC1
       rect:
         serializedVersion: 2
         x: 16
@@ -1393,7 +1393,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_42
+      name: Nature_Basic_TC2
       rect:
         serializedVersion: 2
         x: 64
@@ -1414,7 +1414,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_43
+      name: Nature_Basic_TC3
       rect:
         serializedVersion: 2
         x: 112
@@ -1435,7 +1435,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_44
+      name: Nature_Basic_TC4
       rect:
         serializedVersion: 2
         x: 160
@@ -1456,7 +1456,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_45
+      name: Nature_Basic_TC5
       rect:
         serializedVersion: 2
         x: 208
@@ -1477,7 +1477,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_46
+      name: Nature_Basic_TC6
       rect:
         serializedVersion: 2
         x: 256
@@ -1498,7 +1498,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_47
+      name: Nature_Basic_TC7
       rect:
         serializedVersion: 2
         x: 304
@@ -1519,7 +1519,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_48
+      name: Nature_Basic_TC8
       rect:
         serializedVersion: 2
         x: 352
@@ -1771,7 +1771,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_60
+      name: Nature_PaddingTL
       rect:
         serializedVersion: 2
         x: 928
@@ -1792,7 +1792,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_61
+      name: Nature_PaddingTC
       rect:
         serializedVersion: 2
         x: 976
@@ -1813,7 +1813,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_62
+      name: Nature_PaddingTR
       rect:
         serializedVersion: 2
         x: 1024
@@ -1918,7 +1918,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_67
+      name: Nature_Basic_TL
       rect:
         serializedVersion: 2
         x: 208
@@ -1981,7 +1981,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_70
+      name: Nature_Basic_STL
       rect:
         serializedVersion: 2
         x: 351
@@ -2002,7 +2002,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_71
+      name: Nature_Basic_STR
       rect:
         serializedVersion: 2
         x: 400
@@ -2065,7 +2065,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_74
+      name: Nature_Basic_TR
       rect:
         serializedVersion: 2
         x: 544
@@ -2233,7 +2233,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_82
+      name: Nature_PaddingLC
       rect:
         serializedVersion: 2
         x: 928
@@ -2254,7 +2254,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_83
+      name: Nature_PaddingC
       rect:
         serializedVersion: 2
         x: 976
@@ -2275,7 +2275,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_84
+      name: Nature_PaddingRC
       rect:
         serializedVersion: 2
         x: 1024
@@ -2380,7 +2380,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_89
+      name: Nature_Basic_BLN
       rect:
         serializedVersion: 2
         x: 208
@@ -2422,7 +2422,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_91
+      name: Nature_Basic_LC
       rect:
         serializedVersion: 2
         x: 304
@@ -2485,7 +2485,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_94
+      name: Nature_Basic_RC
       rect:
         serializedVersion: 2
         x: 448
@@ -2527,7 +2527,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_96
+      name: Nature_Basic_BRN
       rect:
         serializedVersion: 2
         x: 544
@@ -2695,7 +2695,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_104
+      name: Nature_PaddingBL
       rect:
         serializedVersion: 2
         x: 928
@@ -2716,7 +2716,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_105
+      name: Nature_PaddingBC
       rect:
         serializedVersion: 2
         x: 976
@@ -2737,7 +2737,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_106
+      name: Nature_PaddingBR
       rect:
         serializedVersion: 2
         x: 1024
@@ -2779,7 +2779,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_108
+      name: Nature_Basic_BC1
       rect:
         serializedVersion: 2
         x: 64
@@ -2800,7 +2800,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_109
+      name: Nature_Basic_BC2
       rect:
         serializedVersion: 2
         x: 112
@@ -2842,7 +2842,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_111
+      name: Nature_Basic_BR
       rect:
         serializedVersion: 2
         x: 208
@@ -2863,7 +2863,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nature_environment_01_112
+      name: Nature_Basic_BL
       rect:
         serializedVersion: 2
         x: 256
