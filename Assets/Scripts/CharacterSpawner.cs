@@ -33,7 +33,7 @@ public class CharacterSpawner : MonoBehaviour
             }
 
             instance.layer = LayerMask.NameToLayer( "Enemy" );
-            enemy.transform.localScale = Vector3.one * Random.Range( 0.8f, 1.5f );
+            enemy.transform.localScale = Vector3.one * Random.Range( 0.9f, 1.1f );
             enemy.TeamType = TeamType.Enemy;
             enemy.Health = Random.Range( 50.0f, 150.0f );
             enemy.strength = Random.Range( 5.0f, 25.0f );

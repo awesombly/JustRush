@@ -79,6 +79,7 @@ public class Character : MonoBehaviour
     protected static class AnimParams
     {
         public static int IsRight = Animator.StringToHash( "IsRight" );
+        public static int EnemyIndex = Animator.StringToHash( "EnemyIndex" );
     }
 
     private float moveDirection;
@@ -93,6 +94,7 @@ public class Character : MonoBehaviour
     protected void Start()
     {
         TeamType = teamType;
+        animator.SetInteger( AnimParams.EnemyIndex, Random.Range( 0, 15 ) );
     }
 
     protected void Update()
