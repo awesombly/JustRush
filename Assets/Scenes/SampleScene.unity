@@ -833,7 +833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnCharacters:
   - {fileID: 7392321592016013459, guid: 3b94448da44c8364797d44d4d3ec643e, type: 3}
-  spawnCount: 10
+  spawnCount: 20
   spawnArea: {fileID: 818847582}
 --- !u!61 &818847582
 BoxCollider2D:
@@ -9667,6 +9667,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Masha-Ally
       objectReference: {fileID: 0}
+    - target: {fileID: 7392321592016013460, guid: 3b94448da44c8364797d44d4d3ec643e, type: 3}
+      propertyPath: m_GravityScale
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7392321592016013464, guid: 3b94448da44c8364797d44d4d3ec643e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -9717,7 +9721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7392321592016013465, guid: 3b94448da44c8364797d44d4d3ec643e, type: 3}
       propertyPath: strength
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7392321592016013465, guid: 3b94448da44c8364797d44d4d3ec643e, type: 3}
       propertyPath: moveSpeed

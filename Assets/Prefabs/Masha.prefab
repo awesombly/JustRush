@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 213631466}
   - component: {fileID: 7392321592016013460}
   - component: {fileID: 7392321592016013465}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Masha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
