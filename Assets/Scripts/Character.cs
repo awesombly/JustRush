@@ -127,8 +127,8 @@ public class Character : MonoBehaviour
             return;
         }
 
-        float power = 50.0f + ( enemy.strength * 5.0f );
-        hitDelay = 0.002f * power;
+        float power = 100.0f + ( enemy.strength * 10f );
+        hitDelay = 0.15f;
 
         Vector2 force = new Vector2( power * -moveDirection, power );
         rigid.AddForce( force );

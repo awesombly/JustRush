@@ -4,15 +4,39 @@ using UnityEngine;
 
 public class CharacterSpawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public List<GameObject> spawnCharacters;
+    public int spawnCount;
 
-    // Update is called once per frame
-    void Update()
+    public BoxCollider2D spawnArea;
+
+    protected void Start()
     {
-        
+        if ( spawnArea == null || spawnCharacters.Count == 0 )
+        {
+            return;
+        }
+
+        for ( int i = 0; i < spawnCount; ++i )
+        {
+            GameObject character = spawnCharacters[ Random.Range( 0, spawnCharacters.Count ) ];
+
+            Vector3 spawnPosition = new Vector3(
+                Random.Range( spawnArea.bounds.min.x, spawnArea.bounds.max.x )
+                , Random.Range( spawnArea.bounds.min.y, spawnArea.bounds.max.y )
+                , 0.0f );
+
+            GameObject instance = Instantiate( character, spawnPosition, Quaternion.identity, gameObject.transform );
+            Character enemy = instance?.GetComponent<Character>();
+            if ( enemy == null )
+            {
+                return;
+            }
+
+            enemy.transform.localScale = Vector3.one * Random.Range( 0.8f, 1.5f );
+            enemy.TeamType = TeamType.Enemy;
+            enemy.Health = Random.Range( 50.0f, 150.0f );
+            enemy.strength = Random.Range( 5.0f, 10.0f );
+            enemy.moveSpeed = 3.0f;
+        }
     }
 }
