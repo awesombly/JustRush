@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-// 체력을 닳게해도 되고, 밖으로 날려도 이기는?
 
 // 스테이지 시작시 아군, 적 생성 // 스테이지 여러개 생성.. 카메라 설정
 // 적 처치후 스테이지 이동
-// 동료, 적 에셋 추가
 // 동료 추가, 밀리는걸 팀 단위로,, 그냥 개별적으로 움직이게?
-// 스테이지 전환시 연출
-// 스테이지 진입전 로비씬
+// 스테이지 진입전 로비씬, 스테이지 전환시 연출
 // 체력바, 피격시 데미지 폰트
 
 public enum TeamType
@@ -39,8 +36,12 @@ public class Character : MonoBehaviour
             teamType = value;
 
             bool isRight = ( teamType == TeamType.Ally );
-            animator.SetBool( AnimParams.IsRight, isRight );
             moveDirection = ( isRight ? Vector2.right.x : Vector2.left.x );
+
+            if ( teamType == TeamType.Ally )
+            {
+                animator.SetBool( AnimParams.IsRight, isRight );
+            }
         }
     }
 
@@ -54,8 +55,6 @@ public class Character : MonoBehaviour
             health = value;
             if ( Health <= 0.0f )
             {
-                Debug.LogError( "쥬금.. " + name );
-
                 if ( effects.deathEffect != null )
                 {
                     GameObject effect = Instantiate( effects.deathEffect );
@@ -94,7 +93,11 @@ public class Character : MonoBehaviour
     protected void Start()
     {
         TeamType = teamType;
-        animator.SetInteger( AnimParams.EnemyIndex, Random.Range( 0, 15 ) );
+
+        if ( teamType == TeamType.Enemy )
+        {
+            animator.SetInteger( AnimParams.EnemyIndex, Random.Range( 0, 15 ) );
+        }
     }
 
     protected void Update()
@@ -131,7 +134,7 @@ public class Character : MonoBehaviour
         float power = 100.0f + ( enemy.strength * 10f );
         hitDelay = 0.15f;
 
-        Vector2 force = new Vector2( power * -moveDirection, power );
+        Vector2 force = new Vector2( power * -moveDirection, power * 0.7f );
         rigid.AddForce( force );
 
         Health -= enemy.strength;

@@ -159,6 +159,6 @@ MonoBehaviour:
     deathEffect: {fileID: 100004, guid: 2a4d2a4a68e3e1d41afe9474ab4cfff3, type: 3}
     hitEffect: {fileID: 100000, guid: d92b3391f10a45c438296dbf699972e2, type: 3}
   teamType: 0
-  health: 100
+  health: 500
   strength: 5
-  moveSpeed: 5
+  moveSpeed: 7

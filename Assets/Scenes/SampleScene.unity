@@ -984,7 +984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnCharacters:
   - {fileID: 7392321592016013459, guid: aa696e497278c7242b6a5712a09d681e, type: 3}
-  spawnCount: 20
+  spawnCount: 25
   spawnArea: {fileID: 818847582}
 --- !u!61 &818847582
 BoxCollider2D:
@@ -1222,7 +1222,7 @@ Transform:
   - {fileID: 527796894}
   - {fileID: 159309891}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1432125681
 GameObject:
@@ -9986,11 +9986,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7392321592016013460, guid: 3b94448da44c8364797d44d4d3ec643e, type: 3}
       propertyPath: m_GravityScale
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7392321592016013464, guid: 3b94448da44c8364797d44d4d3ec643e, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7392321592016013464, guid: 3b94448da44c8364797d44d4d3ec643e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10038,11 +10038,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7392321592016013465, guid: 3b94448da44c8364797d44d4d3ec643e, type: 3}
       propertyPath: strength
-      value: 30
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7392321592016013465, guid: 3b94448da44c8364797d44d4d3ec643e, type: 3}
       propertyPath: moveSpeed
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b94448da44c8364797d44d4d3ec643e, type: 3}
