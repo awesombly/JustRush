@@ -3,18 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-/// 서로 적에게 돌진
-/// 공격력, 체력, 이속, 날라가는거리,
-/// 
-
-/// 체력을 닳게해도 되고, 밖으로 날려도 이기는?
+// 체력을 닳게해도 되고, 밖으로 날려도 이기는?
 
 /// 애니메이션 작업
-// 스테이지 시작시 아군, 적 생성
+// 스테이지 시작시 아군, 적 생성 // 스테이지 여러개 생성.. 카메라 설정
 // 적 처치후 스테이지 이동
-// 동료 추가, 밀리는걸 팀 단위로
+// 동료, 적 에셋 추가
+// 동료 추가, 밀리는걸 팀 단위로,, 그냥 개별적으로 움직이게?
 // 스테이지 전환시 연출
-// 스테이지 진입 로비씬
+// 스테이지 진입전 로비씬
+// 체력바, 피격시 데미지 폰트
 
 public enum TeamType
 {
@@ -23,6 +21,15 @@ public enum TeamType
 
 public class Character : MonoBehaviour
 {
+    [System.Serializable]
+    private struct Effects
+    {
+        public GameObject deathEffect;
+        public GameObject hitEffect;
+    }
+    [SerializeField]
+    private Effects effects;
+    
     [SerializeField]
     private TeamType teamType;
     public TeamType TeamType
@@ -49,6 +56,17 @@ public class Character : MonoBehaviour
             if ( Health <= 0.0f )
             {
                 Debug.LogError( "쥬금.. " + name );
+
+                if ( effects.deathEffect != null )
+                {
+                    GameObject effect = Instantiate( effects.deathEffect );
+                    if ( effect != null )
+                    {
+                        effect.transform.position = transform.position;
+                    }
+                }
+                
+                Destroy( gameObject );
             }
         }
     }
@@ -89,7 +107,7 @@ public class Character : MonoBehaviour
         rigid.velocity = new Vector2( moveSpeed * moveDirection, rigid.velocity.y );
     }
 
-    protected void OnCollisionEnter2D( Collision2D collision )
+    protected void OnHit( Collision2D collision )
     {
         Character enemy = collision.gameObject?.GetComponent<Character>();
         if ( enemy == null )
@@ -103,15 +121,38 @@ public class Character : MonoBehaviour
             return;
         }
 
-        float power = 50.0f + ( enemy.strength * 5.0f );
+        if ( enemy == null )
+        {
+            Debug.LogError( "enemy is null" );
+            return;
+        }
 
-        hitDelay = 0.002f * power; // 발이 땅에 닿으면 풀리게?
+        float power = 50.0f + ( enemy.strength * 5.0f );
+        hitDelay = 0.002f * power;
 
         Vector2 force = new Vector2( power * -moveDirection, power );
         rigid.AddForce( force );
 
         Health -= enemy.strength;
 
-        Debug.Log( collision.gameObject.name );
+        if ( effects.hitEffect != null )
+        {
+            Instantiate( effects.hitEffect, collision.GetContact( 0 ).point, Quaternion.identity );
+        }
+    }
+
+    protected void OnCollisionEnter2D( Collision2D collision )
+    {
+        OnHit( collision );
+    }
+
+    protected void OnCollisionStay2D( Collision2D collision )
+    {
+        if ( hitDelay > 0.0f )
+        {
+            return;
+        }
+
+        OnHit( collision );
     }
 }
